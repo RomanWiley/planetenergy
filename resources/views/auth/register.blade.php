@@ -17,10 +17,10 @@
                             <div class="col-md-6 radio">
                                 <input type="radio" name="isCompany"
                                     <?php if (isset($isCompany) && $isCompany=="Consumer") echo "checked";?>
-                                    value="false">Particulier
+                                    value="0">Particulier
                                 <input type="radio" name="isCompany"
                                     <?php if (isset($isCompany) && $isCompany=="Company") echo "checked";?>
-                                    value="true">Bedrijf
+                                    value="1">Bedrijf
 
                                 @if ($errors->has('isCompany'))
                                     <span class="invalid-feedback" role="alert">
