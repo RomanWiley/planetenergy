@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Auth;
 use App\Thread;
 use Illuminate\Http\Request;
 
@@ -64,7 +65,11 @@ class ThreadController extends Controller
      */
     public function edit(Thread $thread)
     {
-        return view('threads.edit', compact('thread'));
+        if(\Auth::id() !== $thread->user_id) {
+            return back();
+        } else {
+            return view('threads.edit', compact('thread'));
+        }
     }
 
     /**

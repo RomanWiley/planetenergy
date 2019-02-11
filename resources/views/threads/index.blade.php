@@ -2,9 +2,9 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Forum Threads</div>
+                <div class="panel-heading"><h1>Forum Threads</h1></div>
                  <div class="panel-body">
                     @foreach($threads as $thread)
                         <article>
@@ -13,7 +13,7 @@
                                 {{ $thread->body }}
                             </div>
                             <div class="footer">
-                                <a href='/threads/{{$thread->id}}'>Ga naar dit onderwerp</a>
+                                <a href='/threads/{{$thread->id}}'>Ga naar dit topic</a>
                             </div>
                         </article>
                         <hr>

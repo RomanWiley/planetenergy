@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-                <img src="img/thankyou.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

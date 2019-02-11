@@ -11,7 +11,9 @@
                     {{ $thread->body }}
                 </div>
                 <div class="panel-footer">
-                    <a href="/threads/{{$thread->id}}/edit"><button>Edit post</button></a>
+                    @if(Auth::id() == $thread->user_id)
+                        <a href="{{ action('ThreadController@edit', [$thread->id]) }}">Edit</a>
+                    @endif
                 </div>
             </div>
         </div>

@@ -23,5 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/threads/{thread}', 'ThreadController@show');
 // Route::get('/threads/create', 'ThreadController@create')->name('threads.create');
 Route::resource('threads', 'ThreadController');
+Route::resource('threads', 'ThreadController')->except([
+    'index', 'show'
+])->middleware('auth');
 
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
