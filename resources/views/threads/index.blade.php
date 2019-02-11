@@ -13,7 +13,7 @@
                                 {{ $thread->body }}
                             </div>
                             <div class="footer">
-                                <a href='/threads/{{$thread->id}}'>{{ $thread->title }}</a>
+                                <a href='/threads/{{$thread->id}}'>Ga naar dit onderwerp</a>
                             </div>
                         </article>
                         <hr>
