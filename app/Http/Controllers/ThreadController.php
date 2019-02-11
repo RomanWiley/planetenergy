@@ -64,7 +64,7 @@ class ThreadController extends Controller
      */
     public function edit(Thread $thread)
     {
-        //
+        return view('threads.edit', compact('thread'));
     }
 
     /**
@@ -76,7 +76,12 @@ class ThreadController extends Controller
      */
     public function update(Request $request, Thread $thread)
     {
-        //
+        request()->validate([
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+        $thread->update(request(['title', 'body']));
+        return redirect('/threads');
     }
 
     /**
