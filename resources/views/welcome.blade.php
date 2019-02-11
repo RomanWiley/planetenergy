@@ -8,16 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-header {
-        background-image: url("//img/background-header.jpg");
-}
+
         <!-- Styles -->
         <style>
-
-        header {
-        background-image: url("/public/img/PlanetEnergyLogo2.jpg");
-}
-
             html, body {
                 background-color: #fff;
                 color: #636b6f;
