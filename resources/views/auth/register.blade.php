@@ -12,6 +12,25 @@
                         @csrf
 
                         <div class="form-group row">
+                            <label for="isCompany" class="col-md-4 col-form-label text-md-right">{{ __('Account Type') }}</label>
+
+                            <div class="col-md-6 radio">
+                                <input type="radio" name="isCompany"
+                                    <?php if (isset($isCompany) && $isCompany=="Consumer") echo "checked";?>
+                                    value="false">Particulier
+                                <input type="radio" name="isCompany"
+                                    <?php if (isset($isCompany) && $isCompany=="Company") echo "checked";?>
+                                    value="true">Bedrijf
+
+                                @if ($errors->has('isCompany'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('isCompany') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
@@ -34,6 +53,48 @@
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="company" class="col-md-4 col-form-label text-md-right">{{ __('Company Name') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="company" type="text" class="form-control{{ $errors->has('company') ? ' is-invalid' : '' }}" name="company" value="{{ old('company') }}">
+
+                                @if ($errors->has('company'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('company') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phonenumber" class="col-md-4 col-form-label text-md-right">{{ __('Phonenumber') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phonenumber" type="text" class="form-control{{ $errors->has('phonenumber') ? ' is-invalid' : '' }}" name="phonenumber" value="{{ old('phonenumber') }}">
+
+                                @if ($errors->has('phonenumber'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phonenumber') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="VATnumber" class="col-md-4 col-form-label text-md-right">{{ __('VATnumber') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="VATnumber" type="text" class="form-control{{ $errors->has('VATnumber') ? ' is-invalid' : '' }}" name="VATnumber" value="{{ old('VATnumber') }}">
+
+                                @if ($errors->has('VATnumber'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('VATnumber') }}</strong>
                                     </span>
                                 @endif
                             </div>
