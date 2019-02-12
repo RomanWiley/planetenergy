@@ -1,0 +1,23 @@
+deployment issues betreffende api-beveiliging
+
+
+
+Deploying Passport
+When deploying Passport to your production servers for the first time, you will likely need to run the passport:keys command. This command generates the encryption keys Passport needs in order to generate access token. The generated keys are not typically kept in source control:
+
+php artisan passport:keys
+If necessary, you may define the path where Passport's keys should be loaded from. You may use the Passport::loadKeysFrom method to accomplish this:
+
+/**
+ * Register any authentication / authorization services.
+ *
+ * @return void
+ */
+public function boot()
+{
+    $this->registerPolicies();
+
+    Passport::routes();
+
+    Passport::loadKeysFrom('/secret-keys/oauth');
+}
