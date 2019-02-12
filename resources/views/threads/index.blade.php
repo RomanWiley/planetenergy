@@ -14,6 +14,7 @@
                             </div>
                             <div class="footer">
                                 <a href='/threads/{{$thread->id}}'>Ga naar dit topic</a>
+                            <span class="float-right time-footer">Updated at {{$thread->updated_at}}</span>
                             </div>
                         </article>
                         <hr>

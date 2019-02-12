@@ -86,7 +86,7 @@ class ThreadController extends Controller
             'body' => 'required'
         ]);
         $thread->update(request(['title', 'body']));
-        return redirect('/threads');
+        return redirect("/threads/$thread->id");
     }
 
     /**

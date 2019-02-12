@@ -9,10 +9,36 @@
                 </div>
                 <div class="panel-body">
                     {{ $thread->body }}
+                    <br>
+                    <span class="float-right time-footer">Gewijzigd op: {{ $thread->updated_at }} </span>
                 </div>
                 <div class="panel-footer">
                     @if(Auth::id() == $thread->user_id)
-                        <a href="{{ action('ThreadController@edit', [$thread->id]) }}">Edit</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal">
+                            Edit this topic
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="editModalLabel">Wijzig topic</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                @include('threads.edit')
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        {{-- <a href="{{ action('ThreadController@edit', [$thread->id]) }}">Edit</a> --}}
+                        {{-- @include('threads.edit') --}}
                     @endif
                 </div>
             </div>

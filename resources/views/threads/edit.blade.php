@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+{{-- @extends('layouts.app') --}}
+{{-- @section('content') --}}
 <div class="container">
 <form action="/threads/{{$thread->id}}" method="POST">
     @csrf
@@ -16,4 +16,4 @@
     <button type="submit" class="btn btn-primary">Sla wijzigingen op</button>
   </form>
 </div>
-@endsection
+{{-- @endsection --}}
