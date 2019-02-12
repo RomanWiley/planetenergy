@@ -51,7 +51,9 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'isCompany' => ['required'],
             'name' => ['required', 'string', 'max:255'],
-            'phonenumber' => ['string', 'max:10'],
+            'company' => ['required_if:isCompany,1'],
+            'phonenumber' => ['string', 'max:10', 'nullable', 'required_if:isCompany,1'],
+            'VATnumber' => ['regex:/^NL[0-9]{9}B[0-9]{2}$/', 'required_if:isCompany,1'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
@@ -69,6 +71,7 @@ class RegisterController extends Controller
             'isCompany' => $data['isCompany'],
             'name' => $data['name'],
             'phonenumber' => $data['phonenumber'],
+            'VATnumber' => $data['VATnumber'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
