@@ -29,15 +29,15 @@ Route::resource('threads', 'ThreadController')->except([
 
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
 
-Route::get('/', function () {
+Route::get('/leningen', function () {
     return view('mainloans');
 });;
-Route::get('/', function () {
+Route::get('/subsidies', function () {
     return view('mainsubidies');
 });;
-Route::get('/', function () {
+Route::get('/webshop', function () {
     return view('mainshop');
 });;
-Route::get('/', function () {
+Route::get('/forum', function () {
     return view('mainforum');
 });;
