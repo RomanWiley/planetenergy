@@ -15,6 +15,7 @@ class ThreadController extends Controller
      */
     public function index()
     {
+        \Log::debug('Here is some debug information');
         $threads = Thread::latest()->get();
         return view('threads.index', compact('threads'));
     }
