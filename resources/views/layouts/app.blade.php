@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pe.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{{ URL::asset('css/bootstrap.min.css')}}}" />
+    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -36,6 +36,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li><a href='/threads'>All Threads</a></li>
+                        <li><a href='/threads/create'>Create Thread</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

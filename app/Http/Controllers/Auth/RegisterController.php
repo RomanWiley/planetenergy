@@ -53,7 +53,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'company' => ['required_if:isCompany,1'],
             'phonenumber' => ['string', 'max:10', 'nullable', 'required_if:isCompany,1'],
-            'VATnumber' => ['regex:/^NL[0-9]{9}B[0-9]{2}$/', 'required_if:isCompany,1'],
+            'VATnumber' => ['regex:/^NL[0-9]{9}B[0-9]{2}$/', 'nullable', 'required_if:isCompany,1'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
