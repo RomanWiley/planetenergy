@@ -28,3 +28,16 @@ Route::resource('threads', 'ThreadController')->except([
 ])->middleware('auth');
 
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
+
+Route::get('/', function () {
+    return view('mainloans');
+});;
+Route::get('/', function () {
+    return view('mainsubidies');
+});;
+Route::get('/', function () {
+    return view('mainshop');
+});;
+Route::get('/', function () {
+    return view('mainforum');
+});;
