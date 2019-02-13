@@ -33,24 +33,24 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="#">Leningen</a>
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Forum</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Leningen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Subsidies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Producten</a>
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Innovaties</a>
+            <a class="nav-link" href="#"></a>
           </li>
           </li>
         </ul>
@@ -113,7 +113,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
         <BR>
           <img class="card-img-top" src="img/farm.jpg" alt="">
           <div class="card-body">
-            <h4 class="card-title">Producten</h4>
+            <h4 class="card-title">Shop</h4>
             <p class="card-text">Wij bieden op het gebied van duurzame energie een aantal producten aan, deels aangeboden door particulieren, deels door bedrijven.....</p>
           </div>
           <div class="card-footer">
@@ -129,7 +129,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
         <BR>
                     <img class="card-img-top" src="img/ducks.jpg" alt="">
           <div class="card-body">
-            <h4 class="card-title">Inovaties</h4>
+            <h4 class="card-title">Forum</h4>
             <p class="card-text">Onder deze pijler kunt u alles vinden en delen op het gebied van innovatie binnen de wereld van duurzame energie.....</p>
           </div>
           <div class="card-footer">
