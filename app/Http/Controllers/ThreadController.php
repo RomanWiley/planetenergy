@@ -26,7 +26,7 @@ class ThreadController extends Controller
      */
     public function create()
     {
-        return view('threads.create', compact('threads'));
+        return view('threads.create');
     }
 
     /**
