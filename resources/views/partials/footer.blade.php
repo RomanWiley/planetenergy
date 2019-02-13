@@ -4,7 +4,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; SOA & Cloud Computing</p>
+                <p>Copyright &copy; Planet Energy</p>
             </div>
         </div>
     </footer>

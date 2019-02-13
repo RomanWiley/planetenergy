@@ -14,21 +14,22 @@ and open the template in the editor.
         <meta name="author" content="">
 
         <title>PC Shop - @yield('title')</title>
-        
-        <link rel="stylesheet" href="{{{ URL::asset('css/bootstrap.min.css')}}}" />
-        <link rel="stylesheet" href="{{{ URL::asset('css/shop-homepage.css')}}}" />
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        {{-- <link rel="stylesheet" href="{{{ URL::asset('css/bootstrap.min.css')}}}" />
+        <link rel="stylesheet" href="{{{ URL::asset('css/shop-homepage.css')}}}" /> --}}
     </head>
     <body>
         @include('partials.header')
         <!-- Page Content -->
         <div class="container">
-            @yield('content') 
+            @yield('content')
         </div>
         <!-- /.container -->
-        
+
         @include('partials.footer')
-        
-        <script type="text/javascript" src="{{{ URL::asset('js/jquery.js')}}}"></script>
-        <script src="{{{ URL::asset('js/bootstrap.min.js')}}}"></script>
+
+        {{-- <script type="text/javascript" src="{{{ URL::asset('js/jquery.js')}}}"></script>
+        <script src="{{{ URL::asset('js/bootstrap.min.js')}}}"></script> --}}
     </body>
 </html>
