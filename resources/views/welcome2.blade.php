@@ -51,7 +51,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
             <p class="card-text">Wij bieden op het gebied van duurzame energie een aantal producten aan, deels aangeboden door particulieren, deels door bedrijven.....</p>
           </div>
           <div class="card-footer">
-            <a href="/webshop" class="btn btn-primary">Meer info</a>
+            <a href="/mainwebshop" class="btn btn-primary">Meer info</a>
           </div>
         </div>
       </div>
