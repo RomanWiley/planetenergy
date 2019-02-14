@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="img/logohorizontalsmall2.png">
+                    <img src="/img/logohorizontalsmall2.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link text-light" href='/'>Home</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href='#'>Insert link</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/threads'>Forum</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -12,6 +12,11 @@
         <label for="body">Thread text</label>
         <textarea class="form-control" name="body" id="body" cols="30" rows="10">Text van de thread</textarea>
     </div>
+    <select name="category">
+        <option value="members">Leden Forum</option>
+        <option value="science">Wetenschap Forum</option>
+        <option value="innovation">Innovatie Forum</option>
+    </select>
     <button type="submit" class="btn btn-primary">Maak thread aan</button>
   </form>
 </div>
