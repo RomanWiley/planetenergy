@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Auth;
 use App\Thread;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ThreadController extends Controller
 {
@@ -15,7 +16,8 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        $threads = Thread::latest()->get();
+        // $threads = DB::table('threads')->latest()->get()->paginate(10);
+        $threads = Thread::latest()->paginate(15);
         return view('threads.index', compact('threads'));
     }
 
