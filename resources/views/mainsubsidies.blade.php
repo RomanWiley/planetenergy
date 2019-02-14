@@ -15,8 +15,6 @@ Maximale bijdrage: Onbepaald
 Status: Open voor indiening
 Deadline voor aanvraag: 31-12-2019
 
-
-
 <button class="btn btn-info"><a class="text-dark font-weight-bold" href="#">Proceed</a></button>
 
 @endsection
