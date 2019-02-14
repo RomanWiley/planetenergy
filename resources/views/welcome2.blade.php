@@ -15,7 +15,7 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="img/nature.png" alt="">
+          <img class="card-img-top" src="img/nature.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Leningen</h4>
             <p class="card-text">Heeft u plannen om te investeren in duurzame energie?
@@ -30,7 +30,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
 
-                    <img class="card-img-top" src="img/houses.png" alt="">
+                    <img class="card-img-top" src="img/houses.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Subsidies</h4>
             <p class="card-text">Hier vindt u een overzicht van subsidieregelingen die er worden aangeboden…..</p>
