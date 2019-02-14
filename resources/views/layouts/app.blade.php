@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Planet Energy') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,7 +19,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pe.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -35,8 +34,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link text-light" href='/threads'>All Threads</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href='/threads/create'>Create Thread</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/'>Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='#'>Insert link</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -75,9 +75,16 @@
             </div>
         </nav>
 
+
+
+        <main class="heading">
+            @yield('forumheader')
+        </main>
+
         <main class="py-4">
             @yield('content')
         </main>
+        @include('partials.footer')
     </div>
 </body>
 </html>

@@ -1,38 +1,10 @@
-@extends('layouts.master')
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Planet Energy</title>
-
-  <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-
+@extends('layouts.app')
+@section('content')
 
   <!-- Page Content -->
   <div class="container">
-
-<style>
-    .my-4 {
-      background-image: url("img/roadmap-sustainable-energy_header.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-</style>
     <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
+    <header class="jumbotron my-4 pe-jumbotron">
       <h1 class="display-3">Duurzame energie voor iedereen!</h1>
       <p class="lead">Planet Energy is een platform dat o.a. de mogelijkheid geeft aan mensen met een laag inkomen om te investeren in duurzame energie. Dit wordt gedaan dmv leningen en subsidies. Verder is Planet energy een informatie platform voor duurzame energie.</p>
       <a href="" class="btn btn-primary btn-lg">Lees meer...</a>
@@ -104,10 +76,5 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
     <!-- /.row -->
 
   </div>
-  <!-- /.container -->
 
-
-
-</body>
-
-</html>
+@endsection

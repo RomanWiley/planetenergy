@@ -2,3 +2,9 @@
     font-size: 0.8em;
     color: green;
 }
+
+.pe-jumbotron {
+    background-image: url("../img/roadmap-sustainable-energy_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
