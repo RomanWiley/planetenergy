@@ -40,7 +40,8 @@ class ThreadController extends Controller
         $attributes = request()->validate([
             'user_id' => ['required'],
             'title' => ['required', 'min:3', 'max:255'],
-            'body' => ['required', 'min:10']
+            'body' => ['required', 'min:10'],
+            'category' => ['required']
         ]);
         Thread::create($attributes);
         return redirect('/threads');

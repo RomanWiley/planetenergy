@@ -36,7 +36,7 @@ Route::get('/subsidies', function () {
     return view('mainsubidies');
 });;
 Route::get('/webshop', function () {
-    return view('mainshop');
+    return view('mainwebshop');
 });;
 Route::get('/forum', function () {
     return view('mainforum');

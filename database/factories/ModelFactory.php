@@ -18,7 +18,8 @@ $factory->define(App\Thread::class, function(Faker $faker){
         return factory('App\User')->create()->id;
      },
      'title' => $faker->sentence,
-     'body' => $faker->paragraph
+     'body' => $faker->paragraph,
+     'category' => $faker->randomElement(['members','science','innovation']),
    ];
 });
 $factory->define(App\Reply::class, function(Faker $faker){
