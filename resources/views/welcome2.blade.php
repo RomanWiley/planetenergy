@@ -33,7 +33,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
                     <img class="card-img-top" src="img/houses.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Subsidies</h4>
-            <p class="card-text">Het doel van de regeling Investeringssubsidie duurzame energie (ISDE) is het stimuleren van de productie van duurzame energie.....</p>
+            <p class="card-text">Hier vindt u een overzicht van subsidieregelingen die er worden aangeboden…..</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">Meer info</a>
@@ -64,7 +64,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
                     <img class="card-img-top" src="img/ducks.jpg" alt="">
           <div class="card-body">
             <h4 class="card-title">Forum</h4>
-            <p class="card-text">Onder deze pijler kunt u alles vinden en delen op het gebied van innovatie binnen de wereld van duurzame energie.....</p>
+            <p class="card-text">Hier kunt u alles vinden en delen op het gebied van innovatie binnen de wereld van duurzame energie.....</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">Meer info</a>
