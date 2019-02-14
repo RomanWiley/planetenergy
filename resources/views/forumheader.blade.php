@@ -32,8 +32,8 @@
         </li>
       </ul>
 
-      <div class="btn-group d-flex justify-content-center" role="group" aria-label="CategorySelection">
+      {{-- <div class="btn-group d-flex justify-content-center" role="group" aria-label="CategorySelection">
             <button id="members" type="button" class="flex-fill btn btn-secondary">Leden</button>
             <button id="science" type="button" class="flex-fill btn btn-secondary">Wetenschap</button>
             <button id="innovation" type="button" class="flex-fill btn btn-secondary">Innovatie</button>
-          </div>
+          </div> --}}

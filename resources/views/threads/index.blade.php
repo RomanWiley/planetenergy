@@ -9,7 +9,7 @@
                 <div class="panel-heading"><h1>Forum Threads</h1></div>
                  <div class="panel-body">
                     @foreach($threads as $thread)
-                        @if ($thread->category == $category)
+                        {{-- @if ($thread->category == $category) --}}
 
                         <article>
                             <h4>{{ $thread->title }}</h4>
@@ -22,7 +22,7 @@
                             </div>
                         </article>
                         <hr>
-                        @endif
+                        {{-- @endif --}}
                     @endforeach
                 </div>
                 {{$threads->links()}}

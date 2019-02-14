@@ -84,7 +84,7 @@
             @yield('forumheader')
         </main>
 
-        <main class="py-4">
+        <main class="py-4 container">
             @yield('content')
         </main>
         @include('partials.footer')
