@@ -35,7 +35,7 @@ Route::get('/loans', function () {
 Route::get('/subsidies', function () {
     return view('mainsubsidies');
 });;
-Route::get('/webshop', function () {
+Route::get('/mainwebshop', function () {
     return view('mainwebshop');
 });;
 Route::get('/forum', function () {
@@ -43,4 +43,7 @@ Route::get('/forum', function () {
 });;
 Route::get('/contact', function () {
     return view('contact');
+});;
+Route::get('/webshop', function () {
+    return view('webshop');
 });;
