@@ -40,7 +40,6 @@
                         <li class="nav-item"><a class="nav-link text-light" href='/webshop'>Webshop</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/forum'>Forums</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href='/threads'>Forum</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
