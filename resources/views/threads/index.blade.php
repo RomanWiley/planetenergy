@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<?php $category = 'members'?>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
@@ -8,7 +9,7 @@
                 <div class="panel-heading"><h1>Forum Threads</h1></div>
                  <div class="panel-body">
                     @foreach($threads as $thread)
-                        @if ($thread->category == 'members')
+                        @if ($thread->category == $category)
 
                         <article>
                             <h4>{{ $thread->title }}</h4>
@@ -24,6 +25,7 @@
                         @endif
                     @endforeach
                 </div>
+                {{$threads->links()}}
             </div>
         </div>
     </div>
