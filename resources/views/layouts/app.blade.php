@@ -35,9 +35,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link text-light" href='/'>Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/loans'>Leningen</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/subsidies'>Subsidies</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/webshop'>Webshop</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/forum'>Forums</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href='/threads'>Forum</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
