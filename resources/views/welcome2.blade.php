@@ -22,7 +22,7 @@
 Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Meer info</a>
+            <a href="/loans" class="btn btn-primary">Meer info</a>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
             <p class="card-text">Hier vindt u een overzicht van subsidieregelingen die er worden aangeboden…..</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Meer info</a>
+            <a href="/subsidies" class="btn btn-primary">Meer info</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
             <p class="card-text">Wij bieden op het gebied van duurzame energie een aantal producten aan, deels aangeboden door particulieren, deels door bedrijven.....</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Meer info</a>
+            <a href="/webshop" class="btn btn-primary">Meer info</a>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
             <p class="card-text">Hier kunt u alles vinden en delen op het gebied van innovatie binnen de wereld van duurzame energie.....</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Meer info</a>
+            <a href="/forum" class="btn btn-primary">Meer info</a>
           </div>
         </div>
       </div>
