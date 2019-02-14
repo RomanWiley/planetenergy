@@ -41,3 +41,6 @@ Route::get('/webshop', function () {
 Route::get('/forum', function () {
     return view('mainforum');
 });;
+Route::get('/contact', function () {
+    return view('contact');
+});;
