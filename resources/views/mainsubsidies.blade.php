@@ -2,19 +2,6 @@
 
 @section('content')
 
- 
-
-  <div class="header" id="myHeader"> 
-    <h1 class="mt-4 mb-3">Subsidie</h1>
-    </div>
-    
-<script>
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-    </script>
-
     <div class="row">
 
       <!-- Subsidies Column -->
@@ -33,8 +20,9 @@
 			<li>Subsidieverstrekker: Ministerie van Economische Zaken en Klimaat</li>
 			<li>Maximale bijdrage: Onbepaald</li>
 			<li>Status: Open voor indiening</li>
-			<li>Deadline voor aanvraag: 31-12-2019.</li>
-      <br>
+			<li>Deadline voor aanvraag: 31-12-2019.<li>
+      <ul>
+      
             <a href="#" class="btn btn-primary">Lees meer &rarr;</a>
           
 
@@ -70,14 +58,5 @@
             </div>
           </div>
         </div>
-
-
-  
-
-
-
-
-
-<!--button class="btn btn-info"><a class="text-dark font-weight-bold" href="#">Proceed</a></button>-->
 
 @endsection
