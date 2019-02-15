@@ -5,6 +5,6 @@
 
     </div>
     <div class="panel-body">
-        {{ $reply->body }}
+        {!! nl2br($reply->body) !!}
     </div>
 </div>
