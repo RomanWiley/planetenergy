@@ -22,10 +22,10 @@
 </script>
 <ul class="nav nav-pills nav-justified">
         <li class="nav-item">
-          <a class="nav-link active" href="/threads">Forum Home</a>
+          <a class="nav-link" href="/threads">Forum Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/threads/create">Nieuwe thread aanmaken</a>
+          <a class="nav-link" href="<?php echo $url = action('ThreadController@index');?>/create">Nieuwe thread aanmaken</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#!">Another Link</a>
