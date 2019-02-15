@@ -4,10 +4,16 @@
 
  
 
-    
+  <div class="header" id="myHeader"> 
     <h1 class="mt-4 mb-3">Subsidie</h1>
-
+    </div>
     
+<script>
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+    </script>
 
     <div class="row">
 
@@ -16,7 +22,7 @@
 
         <!-- Blog Post -->
         <div class="card mb-4">
-          <img class="card-img-top" src="img/ducks.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/geld.jpg" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title">Subsidies</h2>
             <p class="card-text">Omdat wij natuurlijk niet zelf subsidies verstrekken, is de subsidiepijler alleen bedoeld om aandacht te geven aan het feit dat de subsidies bestaan. Natuurlijk proberen we wel de ingang en info te geven voordat u in het aanmeldingstraject komt. En we geven de basisinformatie voordat u teleurgesteld ontdekt niet in aanmerking te kunnen komen.</p>
