@@ -1,0 +1,2 @@
+insert into products(created_at, updated_at, product_category, product_name, price, user_id) values (NOW(), NOW(), "Genereren", "Windmolen XR 25", 1799, 1);
+
