@@ -47,3 +47,5 @@ Route::get('/contact', function () {
 Route::get('/webshop', function () {
     return view('webshop');
 });;
+
+Route::resource('product', 'ProductController')->middleware('auth');

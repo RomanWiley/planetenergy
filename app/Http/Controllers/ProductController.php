@@ -38,6 +38,7 @@ class ProductController extends Controller
         //
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -46,8 +47,10 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        $this->authorize('update', $product);
+        return view('product.show', compact('product'));
     }
+
 
     /**
      * Show the form for editing the specified resource.

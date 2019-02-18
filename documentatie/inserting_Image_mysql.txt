@@ -1,0 +1,4 @@
+
+
+INSERT INTO xx_BLOB(ID,IMAGE) VALUES(1,LOAD_FILE('E:/Images/jack.jpg'));
+

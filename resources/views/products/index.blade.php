@@ -4,27 +4,25 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
-                @include('forumheader')
+                @include('productheader')
                 <div class="panel-heading"><h1>Webshop</h1></div>
                  <div class="panel-body">
-                    @foreach($threads as $thread)
-                        {{-- @if ($thread->category == $category) --}}
+                    @foreach($products as $product)
 
                         <article>
-                            <h4>{{ $thread->title }}</h4>
+                            <h4>{{ $product->product_name }}</h4>
                             <div class='body'>
-                                {{ $thread->body }}
+                                {{ $product->price }}
                             </div>
                             <div class="footer">
-                                <a href='/products/{{$thread->id}}'>Ga naar dit topic</a>
-                                <span class="float-right time-footer">Updated at {{$thread->updated_at}}</span>
+                                <a href='/products/{{$product->id}}'>Ga naar dit product</a>
+                                <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
                             </div>
                         </article>
                         <hr>
-                        {{-- @endif --}}
                     @endforeach
                 </div>
-                {{$threads->links()}}
+                {{-- {{$product->links()}} --}}
             </div>
         </div>
     </div>

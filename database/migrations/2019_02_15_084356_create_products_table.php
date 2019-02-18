@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->timestamps();
             $table->string('product_name');
             $table->decimal('price', 8, 2);
-            $table->binary('product_image');
+            $table->binary('product_image')->nullable();
             $table->unsignedInteger('user_id');
 
             $table->foreign('user_id')->references('id')->on('users');
