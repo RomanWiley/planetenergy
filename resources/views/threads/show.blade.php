@@ -8,7 +8,7 @@
                     {{ $thread->title }}
                 </div>
                 <div class="panel-body">
-                    {{ $thread->body }}
+                    {!! nl2br($thread->body) !!}
                     <br>
                     <span class="float-right time-footer">Gewijzigd op: {{ $thread->updated_at }} </span>
                 </div>
