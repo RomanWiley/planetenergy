@@ -18,7 +18,8 @@ $products=App\Product::all()
                         <article>
                             <h4>{{ $product->product_name }}</h4>
                             <div class='body'>
-                                {{ $product->price }}
+                                {{ $product->product_category }}<BR>
+                                Euro: {{ $product->price }}
                             </div>
                             <div class="footer">
                                 <a href='/products/{{$product->id}}'>Ga naar dit product</a>
