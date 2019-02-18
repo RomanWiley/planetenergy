@@ -49,4 +49,4 @@ Route::get('/webshop', function () {
 });;
 
 
-// Route::resource('product', 'ProductController')->middleware('auth');
+Route::resource('product', 'ProductController')->middleware('auth');

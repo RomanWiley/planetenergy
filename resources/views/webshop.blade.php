@@ -10,7 +10,7 @@ $products=App\Product::all()
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
-                {{-- @include('productheader') --}}
+                @include('productheader')
                 <div class="panel-heading"><h1>Webshop</h1><br></div>
                  <div class="panel-body">
                     @foreach($products as $product)
@@ -25,9 +25,12 @@ $products=App\Product::all()
                                 <a href='/products/{{$product->id}}'>Ga naar dit product</a>
                                 <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
                             </div>
+                            <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/products/{{$product->id}}/edit">Edit</a></button>
+
                         </article>
                         <hr>
                     @endforeach
+
                 </div>
                 {{-- {{$product->links()}} --}}
             </div>
