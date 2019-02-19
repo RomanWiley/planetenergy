@@ -25,7 +25,7 @@ $products=App\Product::all()
                                 <a href='/product/{{$product->id}}'>Ga naar dit product</a>
                                 <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
                             </div>
-                            <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/products/{{$product->id}}/edit">Edit</a></button>
+                            <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/{{$product->id}}/edit">Edit</a></button>
 
                         </article>
                         <hr>
