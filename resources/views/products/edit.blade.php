@@ -1,10 +1,10 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
 
 	<h1 class="title">Edit a Product</h1>
 
-    <form method="post" action="/products/{{ $product->id }}">
+    <form method="post" action="/product/{{ $product->id }}">
         @csrf
         @method('PATCH')
 

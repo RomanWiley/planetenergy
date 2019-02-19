@@ -27,6 +27,10 @@ Route::resource('threads', 'ThreadController')->except([
     'index', 'show'
 ])->middleware('auth');
 
+Route::get('/wetenschapforum', function (App\Thread $thread) {
+    return view('sciencethreads.index', ['threads' => App\Thread::latest()->paginate(8)]);
+});
+
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
 
 Route::get('/loans', function () {

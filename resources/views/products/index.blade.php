@@ -15,7 +15,7 @@
                                 {{ $product->price }}
                             </div>
                             <div class="footer">
-                                <a href='/products/{{$product->id}}'>Ga naar dit product</a>
+                                <a href='/product/{{$product->id}}'>Ga naar dit product.</a>
                                 <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
                             </div>
                         </article>

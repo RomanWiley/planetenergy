@@ -35,7 +35,14 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->authorize('update', $product);
+
+        $product->update(request()->validate([
+            'product_category' => 'required',
+            'product_name' => 'required',
+            'price' => 'required',
+            'user_id' => 'required']));
+            return redirect('/products');
     }
 
 
@@ -47,8 +54,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $this->authorize('update', $product);
-        return view('product.show', compact('product'));
+        // $this->authorize('update', $product);
+        return view('products.show', compact('product'));
     }
 
 
@@ -61,14 +68,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $this->authorize('update', $product);
-
-        $product->update(request()->validate([
-            'product_category' => 'required',
-            'product_name' => 'required',
-            'price' => 'required',
-            'user_id' => 'required']));
-            return redirect('/products');
-
+        return view('products.edit', compact('product'));
     }
 
 
