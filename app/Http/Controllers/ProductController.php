@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -35,14 +35,13 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $this->authorize('update', $product);
-
-        $product->update(request()->validate([
+        // $this->authorize('update', $product);
+        Product::create(request()->validate([
             'product_category' => 'required',
             'product_name' => 'required',
             'price' => 'required',
             'user_id' => 'required']));
-            return redirect('/products');
+            return redirect('/webshop');
     }
 
 

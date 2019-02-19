@@ -4,36 +4,36 @@
 
 <h1 class="title">Toevoegen nieuw product</h1>
 
-    <form method="post" action="/product{{ $product->id }}">
+    <form method="post" action="/product">
     @csrf
 
     De create pagina <!-- Dit is een test tekstje  -->
 
 <div class="field">
-			<label class="label" for="productname">Productnaam</label>
+			<label class="label" for="product_name">Productnaam</label>
 			<div class="control">
-                <input type="text" class="input" name="productname" value="{{ $product->product_name }}" reqiured>
+                <input type="text" class="input form-control" name="product_name" value="" required>
 			</div>
     	</div>
 
         <div class="field">
-            <label class="label" for="category">Categorie</label>
+            <label class="label" for="product_category">Categorie</label>
             <div class="control">
-                <input type="text" class="input" name="category" value="{{ $product->product_category }}">
+                <input type="text" class="input form-control" name="product_category" value="">
             </div>
         </div>
 
 	<div class="field">
 		<label class="label" for="price">Prijs</label>
 		<div class="control">
-			<input type="text" class="input" name="price" value="{{ $product->price }}">
+			<input type="text" class="input form-control" name="price" value="">
 		</div>
 	</div>
 
 	<div class="field">
 		<label class="label" for="image">Afbeelding</label>
 		<div class="control">
-			<input type="text" class="input" name="image" value="{{ $product->product_image }}">
+			<input type="text" class="input form-control" name="image" value="">
 		</div>
     </div>
 
@@ -45,4 +45,5 @@
 		</div>
 	</div>
 
+    @include('error')
 @endsection
