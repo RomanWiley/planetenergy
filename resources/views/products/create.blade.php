@@ -2,15 +2,14 @@
 
 @section('content')
 
-	<h1 class="title">Edit a Product</h1>
+<h1 class="title">Toevoegen nieuw product</h1>
 
-    <form method="post" action="/product/{{ $product->id }}">
-        @csrf
-        @method('PATCH')
+    <form method="post" action="/product{{ $product->id }}">
+    @csrf
 
+    De create pagina <!-- Dit is een test tekstje  -->
 
-
-		<div class="field">
+<div class="field">
 			<label class="label" for="productname">Productnaam</label>
 			<div class="control">
                 <input type="text" class="input" name="productname" value="{{ $product->product_name }}" reqiured>
@@ -23,7 +22,6 @@
                 <input type="text" class="input" name="category" value="{{ $product->product_category }}">
             </div>
         </div>
-
 
 	<div class="field">
 		<label class="label" for="price">Prijs</label>
@@ -43,13 +41,8 @@
 
     <div class="field">
 		<div class="control">
-			<button type="submit" class="button is-link">Edit this product</button>
+			<button type="submit" class="button is-link">Voeg toe</button>
 		</div>
 	</div>
-
-    {{-- als een error verschijnt, dan pas de error-balk tonen --}}
-    @include('error')
-
-</form>
 
 @endsection
