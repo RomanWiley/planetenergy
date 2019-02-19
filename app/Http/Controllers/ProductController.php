@@ -60,8 +60,17 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        $this->authorize('update', $product);
+
+        $product->update(request()->validate([
+            'product_category' => 'required',
+            'product_name' => 'required',
+            'price' => 'required',
+            'user_id' => 'required']));
+            return redirect('/products');
+
     }
+
 
     /**
      * Update the specified resource in storage.
