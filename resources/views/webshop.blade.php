@@ -1,21 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
+
+<script>
+    $(document).ready(function(){
+
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".productdiv").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    })
+    </script>
+
 <?php
 
 $products=App\Product::all()
 ?>
-
+{{ $products }}
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 @include('productheader')
-
-                 <div class="panel-body">
+                <input type="text" id="myInput" name="myInput">
+                 <div id="filterme" class="panel-body">
                     @foreach($products as $product)
 
-                        <article>
+                        <article class="productdiv">
                             <h4>{{ $product->product_name }}</h4>
                             <div class='body'>
                                 {{ $product->product_category }}<BR>
