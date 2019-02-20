@@ -4,23 +4,23 @@
 
 	<h1 class="title">Edit a Product</h1>
 
-    <form method="post" action="/product/{{ $product->id }}">
+    <form method="post" action="/product/{{ $product->id }}" enctype="multipart/form-data">
         @csrf
         @method('PATCH')
 
 
 
 		<div class="field">
-			<label class="label" for="productname">Productnaam</label>
+			<label class="label" for="product_name">Productnaam</label>
 			<div class="control">
-                <input type="text" class="input" name="productname" value="{{ $product->product_name }}" reqiured>
+                <input type="text" class="input" name="product_name" value="{{ $product->product_name }}" reqiured>
 			</div>
     	</div>
 
         <div class="field">
-            <label class="label" for="category">Categorie</label>
+            <label class="label" for="product_category">Categorie</label>
             <div class="control">
-                <input type="text" class="input" name="category" value="{{ $product->product_category }}">
+                <input type="text" class="input" name="product_category" value="{{ $product->product_category }}">
             </div>
         </div>
 
@@ -33,9 +33,9 @@
 	</div>
 
 	<div class="field">
-		<label class="label" for="image">Afbeelding</label>
+		<label class="label" for="product_image">Afbeelding</label>
 		<div class="control">
-			<input type="text" class="input" name="image" value="{{ $product->product_image }}">
+			<input type="file" class="input" name="product_image" value="{{ $product->product_image }}">
 		</div>
     </div>
 
