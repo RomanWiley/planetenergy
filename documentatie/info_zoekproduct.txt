@@ -1,0 +1,18 @@
+zoekfunctie;
+
+knop zoekfunctie
+
+knap opent/toont inputveld voor in te voeren tekst
+
+tekst wordt opgeslagen in een variabele
+
+voer een select uit op de database, vul array met resultaat
+indien geen resultaat, toon melding, "Niets gevonden"
+
+select * from products where product_name like "%" && $zoektekst && "%;" (let op juiste syntax voor aanbieden van deze variabele in Laravel)
+
+
+
+ververs het scherm (show.blade.php?) met de zoekvariabele
+
+
