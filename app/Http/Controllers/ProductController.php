@@ -94,7 +94,7 @@ class ProductController extends Controller
         if (isset($request['product_image'])) {
             $product->addMediaFromRequest('product_image')->toMediaCollection('product_images');
         }
-        return redirect('/participant');
+        return redirect('/webshop');
     }
 
     /**

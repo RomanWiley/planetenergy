@@ -30,11 +30,10 @@
 	</div>
 
 	<div class="field">
-		<label class="label" for="image">Afbeelding</label>
+		<label class="label" for="product_image">Afbeelding</label>
 
 		<div class="control">
-			<input type="text" class="input form-control" name="image" value="">
-			<button type="submit" class="button is-link">Selecteer afbeelding</button>
+			<input type="file" class="input form-control" name="product_image" value="">
 	</div>
     </div>
 
