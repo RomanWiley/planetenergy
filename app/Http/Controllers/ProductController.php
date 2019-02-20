@@ -35,12 +35,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        // $this->authorize('update', $product);
-        Product::create(request()->validate([
+        $product = Product::create(request()->validate([
             'product_category' => 'required',
             'product_name' => 'required',
             'price' => 'required',
-            'user_id' => 'required']));
+            'user_id' => 'required',
+            'product_image' => 'required']));
+            if (isset($request['product_image'])) {
+                $product->addMediaFromRequest('product_image')->toMediaCollection('product_images');
+            }
             return redirect('/webshop');
     }
 
