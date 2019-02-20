@@ -8,7 +8,6 @@ $link = $product->getFirstMediaUrl('product_images');
 $old = "localhost";
 $new = "pe.test";
 $newlink = str_replace($old, $new, $link);
-echo $newlink;
 ?>
 
 <h1>Product: {{ $product->product_name }}</h1><br>
