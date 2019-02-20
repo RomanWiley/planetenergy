@@ -30,22 +30,17 @@
 	</div>
 
 	<div class="field">
-		<label class="label" for="image">Afbeelding</label>		
+		<label class="label" for="image">Afbeelding</label>
 
 		<div class="control">
-<<<<<<< HEAD
-            <input type="file" name="product_image" id="product_image">
-		</div>
-=======
 			<input type="text" class="input form-control" name="image" value="">
 			<button type="submit" class="button is-link">Selecteer afbeelding</button>
 	</div>
->>>>>>> 8fb2e66f8034acbf5f12728d860d8c6dc560bbdd
     </div>
 
     <input type="hidden" name="user_id" value="{{ auth()->id() }}">
 
-	
+
     <div class="field">
 		<div class="control">
 			<button type="submit" class="button is-link">Voeg product toe</button>
