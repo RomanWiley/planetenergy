@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<!-- @section('content') -->
+@section('content')
 <?php
 
 $products=App\Product::all()
@@ -11,8 +11,6 @@ $products=App\Product::all()
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 @include('productheader')
-                <div class="panel-heading"><h1>Webshop</h1><br></div>
-                <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/create">Nieuw product</a></button>
 
                  <div class="panel-body">
                     @foreach($products as $product)

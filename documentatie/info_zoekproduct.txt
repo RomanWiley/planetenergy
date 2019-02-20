@@ -2,7 +2,7 @@ zoekfunctie;
 
 knop zoekfunctie
 
-knap opent/toont inputveld voor in te voeren tekst
+knop opent/toont inputveld voor in te voeren tekst
 
 tekst wordt opgeslagen in een variabele
 
