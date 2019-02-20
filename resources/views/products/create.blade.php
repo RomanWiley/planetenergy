@@ -7,7 +7,6 @@
     <form method="post" action="/product">
     @csrf
 
-    De create pagina <!-- Dit is een test tekstje  -->
 
 <div class="field">
 			<label class="label" for="product_name">Productnaam</label>
@@ -31,17 +30,20 @@
 	</div>
 
 	<div class="field">
-		<label class="label" for="image">Afbeelding</label>
+		<label class="label" for="image">Afbeelding</label>		
+
 		<div class="control">
 			<input type="text" class="input form-control" name="image" value="">
-		</div>
+			<button type="submit" class="button is-link">Selecteer afbeelding</button>
+	</div>
     </div>
 
     <input type="hidden" name="user_id" value="{{ auth()->id() }}">
 
+	
     <div class="field">
 		<div class="control">
-			<button type="submit" class="button is-link">Voeg toe</button>
+			<button type="submit" class="button is-link">Voeg product toe</button>
 		</div>
 	</div>
 
