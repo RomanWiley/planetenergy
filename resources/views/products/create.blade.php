@@ -4,7 +4,7 @@
 
 <h1 class="title">Toevoegen nieuw product</h1>
 
-    <form method="post" action="/product">
+    <form method="post" action="/product" enctype="multipart/form-data">
     @csrf
 
     De create pagina <!-- Dit is een test tekstje  -->
@@ -33,7 +33,7 @@
 	<div class="field">
 		<label class="label" for="image">Afbeelding</label>
 		<div class="control">
-			<input type="text" class="input form-control" name="image" value="">
+            <input type="file" name="product_image" id="product_image">
 		</div>
     </div>
 
