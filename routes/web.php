@@ -42,12 +42,16 @@ Route::get('/mainwebshop', function () {
 Route::get('/forum', function () {
     return view('mainforum');
 });;
-Route::get('/contact', function () {
-    return view('contact');
-});;
+// Route::get('/contact', function () {
+//     return view('contact');
+// });;
 Route::get('/webshop', function () {
     return view('webshop');
 });;
 
 
 Route::resource('product', 'ProductController')->middleware('auth');
+
+
+Route::get('contact', 'ContactController@create')->name('contact.create');
+Route::post('contact', 'ContactController@store')->name('contact.store');
