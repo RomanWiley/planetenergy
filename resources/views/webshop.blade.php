@@ -14,8 +14,7 @@ $(document).ready(function(){
   })
 </script>
 
-<button onclick="sortByName()">Sorteer op productnaam</button>
-<button onclick="sortByPrice()">Sorteer op prijs</button>
+
 <?php
 
 $products=App\Product::all()
