@@ -50,7 +50,10 @@ Route::get('/webshop', function () {
 });;
 
 
-Route::resource('product', 'ProductController')->middleware('auth');
+Route::resource('product', 'ProductController');
+Route::resource('product', 'ProductController')->except([
+    'index', 'show'
+])->middleware('auth');
 
 
 Route::get('contact', 'ContactController@create')->name('contact.create');
