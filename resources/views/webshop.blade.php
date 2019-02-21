@@ -2,7 +2,7 @@
 
 @section('content')
 
-<script>
+<script> // search and filterfunction
     $(document).ready(function(){
 
       $("#myInput").on("keyup", function() {
