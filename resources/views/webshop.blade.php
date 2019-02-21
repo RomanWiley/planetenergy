@@ -44,8 +44,8 @@ $products=App\Product::all()
                             </div>
                             <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/{{$product->id}}/edit">Edit</a></button>
 
+                            <hr>
                         </article>
-                        <hr>
                     @endforeach
 
                 </div>
