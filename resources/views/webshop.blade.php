@@ -25,9 +25,6 @@ $products=App\Product::all()
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 @include('productheader')
-                 {{-- input for filter --}}
-                <label for="myInput">Zoek filter: </label>
-                <input type="text" id="myInput" name="myInput" placeholder="Filter..">
                 <br>
                 <br>
                  <div id="filterme" class="panel-body">
