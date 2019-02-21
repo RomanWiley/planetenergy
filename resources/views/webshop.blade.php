@@ -29,9 +29,15 @@ $products=App\Product::all()
                 <br>
                  <div id="filterme" class="panel-body">
                     @foreach($products as $product)
-
+                    <?php
+                    $link = $product->getFirstMediaUrl('product_images');
+                    $old = "localhost";
+                    $new = "pe.test";
+                    $newlink = str_replace($old, $new, $link);
+                    ?>
                         <article class="productdiv">
                             <h4 class="productname">{{ $product->product_name }}</h4>
+                            <img src="<?= $newlink?>" alt="No image found">
                             <div class='body'>
                                 {{ $product->product_category }}<BR>
                                 <span class="productprice"> Euro: {{ $product->price }} </span>
