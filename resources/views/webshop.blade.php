@@ -2,18 +2,20 @@
 
 @section('content')
 
-<script> // search and filterfunction
-    $(document).ready(function(){
+<script>
+$(document).ready(function(){
 
-      $("#myInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $(".productdiv").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".productdiv").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
       });
-    })
-    </script>
+    });
+  })
+</script>
 
+<button onclick="sortByName()">Sorteer op productnaam</button>
+<button onclick="sortByPrice()">Sorteer op prijs</button>
 <?php
 
 $products=App\Product::all()
@@ -24,15 +26,17 @@ $products=App\Product::all()
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 @include('productheader')
+                 {{-- input for filter --}}
                 <input type="text" id="myInput" name="myInput">
+
                  <div id="filterme" class="panel-body">
                     @foreach($products as $product)
 
                         <article class="productdiv">
-                            <h4>{{ $product->product_name }}</h4>
+                            <h4 class="productname">{{ $product->product_name }}</h4>
                             <div class='body'>
                                 {{ $product->product_category }}<BR>
-                                Euro: {{ $product->price }}
+                                <span class="productprice"> Euro: {{ $product->price }} </span>
                             </div>
                             <div class="footer">
                                 <a href='/product/{{$product->id}}'>Ga naar dit product</a>
