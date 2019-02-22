@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pe.css') }}" rel="stylesheet">
 </head>
@@ -40,7 +41,14 @@
                         <li class="nav-item"><a class="nav-link text-light" href='/loans'>Leningen</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/subsidies'>Subsidies</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href='/webshop'>Webshop</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href='/forum'>Forums</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Forums</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item nav-link text-dark" href="/threads">Leden</a>
+                              <a class="dropdown-item nav-link text-dark" href="/wetenschapforum">Wetenschap</a>
+                              <a class="dropdown-item nav-link text-dark" href="/innovatieforum">Innovatie</a>
+                            </div>
+                          </li>
                         <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
                     </ul>
 
