@@ -13,14 +13,20 @@
 		<div class="field">
 			<label class="label" for="product_name">Productnaam</label>
 			<div class="control">
-                <input type="text" class="input" name="product_name" value="{{ $product->product_name }}" reqiured>
+                <input type="text" class="input form-control" name="product_name" value="{{ $product->product_name }}" reqiured>
 			</div>
     	</div>
 
         <div class="field">
             <label class="label" for="product_category">Categorie</label>
             <div class="control">
-                <input type="text" class="input" name="product_category" value="{{ $product->product_category }}">
+                <select class="custom-select" name="product_category">
+                  <option value="Opwekken">Opwekken</option>
+                  <option value="Opslag">Opslag</option>
+                  <option value="Isolatie">Isolatie</option>
+                  <option value="Besparen">Besparen</option>
+                  <option value="Overig">Overig</option>
+                </select>
             </div>
         </div>
 

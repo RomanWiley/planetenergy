@@ -15,7 +15,7 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-		  
+
 		  <a href="/loans"><img class="card-img-top" src="img/nature.jpg" alt="Card image" title="klik om link te volgen"></a>
           <div class="card-body">
             <h4 class="card-title">Leningen</h4>
@@ -44,11 +44,11 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-        
+
            <a href="/mainwebshop"><img class="card-img-top" src="img/farm.jpg" alt="Card image" title="klik om link te volgen"></a>
-		    
+
           <div class="card-body">
-            <h4 class="card-title">Shop</h4>
+            <h4 class="card-title">Webshop</h4>
             <p class="card-text">Wij bieden op het gebied van duurzame energie een aantal producten aan, deels aangeboden door particulieren, deels door bedrijven.....</p>
           </div>
           <div class="card-footer">
@@ -59,7 +59,7 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-     
+
          			  <a href="/forum"><img class="card-img-top" src="img/ducks.jpg" alt="Card image" title="klik om link te volgen"></a>
 		          <div class="card-body">
             <h4 class="card-title">Forum</h4>
