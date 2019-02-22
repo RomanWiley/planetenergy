@@ -35,24 +35,21 @@ $products=App\Product::all()
                     $new = "pe.test";
                     $newlink = str_replace($old, $new, $link);
                     ?>
-                        <article class="productdiv">
-                            <h4 class="productname">{{ $product->product_name }}</h4>
-                            <img src="<?= $newlink?>" alt="No image found">
-                            <div class='body'>
-                                {{ $product->product_category }}<BR>
-                                <span class="productprice"> Euro: {{ $product->price }} </span>
+                        <a href='/product/{{$product->id}}' style="text-decoration:none;color:black">
+                            <article class="productdiv">
+                                <H4 class="productname"><b>{{ $product->product_name }}</b></H4>
+                                <img src="<?= $newlink?>" alt="No image found">
+                                <div class='body'>
+                                    Categorie: {{ $product->product_category }}<BR>
+                                    <span class="productprice"> Euro: {{ $product->price }} </span>
                             </div>
-                            <div class="footer">
-                                <a href='/product/{{$product->id}}'>Ga naar dit product</a>
-                                <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
-                            </div>
-                            <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/{{$product->id}}/edit">Edit</a></button>
+                        </a>
 
                             <hr>
-                        </article>
+                            </article>
                     @endforeach
 
-                </div>
+                </v>
                 {{-- {{$product->links()}} --}}
             </div>
         </div>
