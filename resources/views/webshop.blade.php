@@ -7,8 +7,8 @@ $(document).ready(function(){
 
     $("#myInput").on("keyup", function() {
       var value = $(this).val().toLowerCase();
-      $(".productdiv").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      $(".productname").filter(function() {
+        $(this).parentsUntil(".filterdiv").toggle($(this).text().toLowerCase().indexOf(value) > -1)
       });
     });
   })
@@ -35,6 +35,7 @@ $products=App\Product::all()
                     $new = "pe.test";
                     $newlink = str_replace($old, $new, $link);
                     ?>
+                        <div class="filterdiv">
                         <a href='/product/{{$product->id}}' style="text-decoration:none;color:black">
                             <article class="productdiv">
                                 <H4 class="productname"><b>{{ $product->product_name }}</b></H4>
@@ -47,9 +48,10 @@ $products=App\Product::all()
 
                             <hr>
                             </article>
+                        </div>
                     @endforeach
 
-                </v>
+                </div>
                 {{-- {{$product->links()}} --}}
             </div>
         </div>
