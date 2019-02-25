@@ -25,8 +25,10 @@ Route::resource('threads', 'ThreadController')->except([
 ])->middleware('auth');
 
 Route::get('/wetenschapforum', function (App\Thread $thread) {
-    return view('sciencethreads.index', ['threads' => App\Thread::latest()->paginate(8)]);
+    return view('sciencethreads.index', ['threads' => App\Thread::latest()->where('category', 'science')->paginate(8)]);
 });
+Route::get('wetenschapforum/{thread}', 'ThreadController@show');
+
 
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
 
@@ -42,9 +44,6 @@ Route::get('/mainwebshop', function () {
 Route::get('/forum', function () {
     return view('mainforum');
 });;
-// Route::get('/contact', function () {
-//     return view('contact');
-// });;
 Route::get('/webshop', function () {
     return view('webshop');
 });;

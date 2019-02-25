@@ -5,7 +5,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    {{ $thread->title }}
+                    <h2>{{ $thread->title }}</h2>
                 </div>
                 <div class="panel-body">
                     {!! nl2br($thread->body) !!}
