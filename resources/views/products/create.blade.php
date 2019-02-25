@@ -36,10 +36,10 @@
 	</div>
 
 	<div class="field">
-    <label class="btn btn-default btn-sm center-block btn-file">
- <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
- <input type="file" style="display: none;">Afbeelding toevoegen
-</label>
+        <label class="btn btn-default btn-sm center-block btn-file">
+        <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+        <input name="product_image" type="file" style="display: none;">Afbeelding toevoegen
+        </label>
     </div>
 
 
