@@ -1,31 +1,9 @@
-<script>
-    var $category = 'members'
-
-    $(document).ready(function(){
-        $('#members').click(function (){
-            $category='members';
-        });
-    });
-
-    $(document).ready(function(){
-        $('#science').click(function (){
-            $category='science';
-        });
-    });
-
-    $(document).ready(function(){
-        $('#innovation').click(function (){
-            $category='innovation';
-        });
-    });
-
-</script>
 <ul class="nav nav-pills nav-justified">
         <li class="nav-item">
-          <a class="nav-link" href="/threads">Forum Home</a>
+          <a class="nav-link" href="/forum">Forum Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $url = action('ThreadController@index');?>/create">Nieuwe thread aanmaken</a>
+          <a class="nav-link" href="threads/create">Nieuwe thread aanmaken</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#!">Another Link</a>
@@ -33,7 +11,7 @@
       </ul>
 
       {{-- <div class="btn-group d-flex justify-content-center" role="group" aria-label="CategorySelection">
-            <button id="members" type="button" class="flex-fill btn btn-secondary">Leden</button>
-            <button id="science" type="button" class="flex-fill btn btn-secondary">Wetenschap</button>
-            <button id="innovation" type="button" class="flex-fill btn btn-secondary">Innovatie</button>
-          </div> --}}
+        <button id="members" type="button" class="bg-info flex-fill btn btn-secondary"><a class="text-dark font-weight-bold" href="/ledenforum">Ledenforum</a></button>
+        <button id="science" type="button" class="bg-info flex-fill btn btn-secondary"><a class="text-dark font-weight-bold" href="/wetenschapforum">Wetenschapforum</a></button>
+        <button id="innovation" type="button" class="bg-info flex-fill btn btn-secondary"><a class="text-dark font-weight-bold" href="/innovatieforum">Innovatieforum</a></button>
+      </div> --}}

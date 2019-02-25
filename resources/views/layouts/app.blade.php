@@ -44,7 +44,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Forums</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item nav-link text-dark" href="/threads">Leden</a>
+                              <a class="dropdown-item nav-link text-dark" href="/ledenforum">Leden</a>
                               <a class="dropdown-item nav-link text-dark" href="/wetenschapforum">Wetenschap</a>
                               <a class="dropdown-item nav-link text-dark" href="/innovatieforum">Innovatie</a>
                             </div>

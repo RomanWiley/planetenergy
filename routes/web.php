@@ -19,7 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('threads', 'ThreadController');
+// Route::resource('threads', 'ThreadController'); removed and replaced with lower two routes
+Route::get('/ledenforum', function (App\Thread $thread) {
+    return view('threads.index', ['threads' => App\Thread::latest()->where('category', 'members')->paginate(8)]);
+});
+Route::get('ledenforum/{thread}', 'ThreadController@show');
+
 Route::resource('threads', 'ThreadController')->except([
     'index', 'show'
 ])->middleware('auth');
@@ -28,6 +33,11 @@ Route::get('/wetenschapforum', function (App\Thread $thread) {
     return view('sciencethreads.index', ['threads' => App\Thread::latest()->where('category', 'science')->paginate(8)]);
 });
 Route::get('wetenschapforum/{thread}', 'ThreadController@show');
+
+Route::get('/innovatieforum', function (App\Thread $thread) {
+    return view('innothreads.index', ['threads' => App\Thread::latest()->where('category', 'innovation')->paginate(8)]);
+});
+Route::get('innovatieforum/{thread}', 'ThreadController@show');
 
 
 Route::post('/threads/{thread}/replies', 'ReplyController@store');
