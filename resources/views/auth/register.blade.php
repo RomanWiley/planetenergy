@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+
+<script type="text/javascript">
+    function companyCheck() {
+        if (document.getElementById('Yes').checked) {
+            document.getElementById('companydiv').style.display = 'block';
+        }
+        else document.getElementById('companydiv').style.display = 'none';
+    }
+</script>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,10 +25,10 @@
                             <label for="isCompany" class="col-md-4 col-form-label text-md-right">{{ __('Account Type') }}</label>
 
                             <div class="col-md-6 radio">
-                                <input type="radio" name="isCompany"
+                                <input type="radio" name="isCompany" id="No" onclick="javascript:companyCheck();"
                                     <?php if (isset($isCompany) && $isCompany=="Consumer") echo "checked";?>
                                     value="0">Particulier
-                                <input type="radio" name="isCompany"
+                                <input type="radio" name="isCompany" id="Yes" onclick="javascript:companyCheck();"
                                     <?php if (isset($isCompany) && $isCompany=="Company") echo "checked";?>
                                     value="1">Bedrijf
 
@@ -59,20 +69,6 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="company" class="col-md-4 col-form-label text-md-right">{{ __('Bedrijfs Naam') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="company" type="text" class="form-control{{ $errors->has('company') ? ' is-invalid' : '' }}" name="company" value="{{ old('company') }}">
-
-                                @if ($errors->has('company'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('company') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
                             <label for="phonenumber" class="col-md-4 col-form-label text-md-right">{{ __('Telefoonnummer') }}</label>
 
                             <div class="col-md-6">
@@ -81,6 +77,21 @@
                                 @if ($errors->has('phonenumber'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('phonenumber') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div id="companydiv">
+                        <div class="form-group row">
+                            <label for="company" class="col-md-4 col-form-label text-md-right">{{ __('Bedrijfs Naam') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="company" type="text" class="form-control{{ $errors->has('company') ? ' is-invalid' : '' }}" name="company" value="{{ old('company') }}">
+
+                                @if ($errors->has('company'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('company') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -98,6 +109,7 @@
                                     </span>
                                 @endif
                             </div>
+                        </div>
                         </div>
 
                         <div class="form-group row">
