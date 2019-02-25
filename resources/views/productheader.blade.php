@@ -9,6 +9,15 @@
                 <label for="myInput">Zoekfilter: </label>
                 <input type="text" id="myInput" name="myInput" placeholder="Filter..">
 
+                <label class="label" for="product_category">Categorie</label>
+                <select  name="product_category">
+                  <option value="Opwekken">Opwekken</option>
+                  <option value="Opslag">Opslag</option>
+                  <option value="Isolatie">Isolatie</option>
+                  <option value="Besparen">Besparen</option>
+                  <option value="Overig">Overig</option>
+                </select>
 <BR>
 <BR>
+
 </div>

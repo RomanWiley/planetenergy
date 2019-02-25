@@ -36,20 +36,21 @@
 	</div>
 
 	<div class="field">
-		<label class="label" for="product_image">Afbeelding</label>
-
-		<div class="control">
-			<input type="file" class="input form-control" name="product_image" value="">
-	</div>
+    <label class="btn btn-default btn-sm center-block btn-file">
+ <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+ <input type="file" style="display: none;">Afbeelding toevoegen
+</label>
     </div>
+
+
 
     <input type="hidden" name="user_id" value="{{ auth()->id() }}">
 
 
     <div class="field">
 		<div class="control">
-			<button type="submit" class="button is-link">Voeg product toe</button>
-		</div>
+			<button class="btn btn-info" type="submit" class="button is-link">Voeg product toe</button>
+        </div>
 	</div>
 
     @include('error')
