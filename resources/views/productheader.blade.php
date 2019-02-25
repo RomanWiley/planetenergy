@@ -10,7 +10,7 @@
                 <input type="text" id="myInput" name="myInput" placeholder="Filter..">
 
                 <label class="label" for="product_category">Categorie</label>
-                <select  name="product_category">
+                <select id="select_category" name="product_category" onchange="filteroncategory()">
                   <option value="Opwekken">Opwekken</option>
                   <option value="Opslag">Opslag</option>
                   <option value="Isolatie">Isolatie</option>
@@ -21,3 +21,12 @@
 <BR>
 
 </div>
+<script>
+   function filteroncategory(){
+    var e = document.getElementById("select_category");
+    var strCat = e.options[e.selectedIndex].text;
+    alert(strCat.concat(" is gekozen voor de nieuwe view"));
+    window.open("../webshopcategory", "_self")
+    // $products = DB::table('products')->where('productcategory', product_category)->get();
+}
+</script>

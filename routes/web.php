@@ -67,3 +67,7 @@ Route::resource('product', 'ProductController')->except([
 
 Route::get('contact', 'ContactController@create')->name('contact.create');
 Route::post('contact', 'ContactController@store')->name('contact.store');
+
+Route::get('/webshopcategory', function () {
+    return view('webshopcategory');
+});;
