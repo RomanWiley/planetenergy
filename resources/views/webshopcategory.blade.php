@@ -49,8 +49,8 @@ $products=App\Product::all()
                                 <H4 class="productname"><b>{{ $product->product_name }}</b></H4>
                                 <img src="<?= $newlink?>" alt="No image found">
                                 <div class='body'>
-                                    Categorie: {{ $product->product_category }}<BR>
-                                    <span class="productprice"> &#8364 {{ $product->price }} </span>
+                                    Categorie: {{ $product->product_category }}<BR> &#8364
+                                    <span class="productprice"> {{ $product->price }} </span>
                             </div>
                         </a>
 

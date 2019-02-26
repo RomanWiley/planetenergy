@@ -44,13 +44,13 @@ function sortByPrice(){
    for (i = 0; i < (list.length - 1); i++) {
      shouldSwitch = false;
      if (dir == "asc") {
-     if (list[i].innerText.toLowerCase() > list[i + 1].innerText.toLowerCase()){
+     if (Number(list[i].innerText.toLowerCase()) > Number(list[i + 1].innerText.toLowerCase())){
        shouldSwitch = true;
        break;
      }
    }
    else if (dir == "desc"){
-     if (list[i].innerText.toLowerCase() < list[i + 1].innerText.toLowerCase()){
+     if (Number(list[i].innerText.toLowerCase()) < Number(list[i + 1].innerText.toLowerCase())){
        shouldSwitch = true;
        break;
      }
