@@ -1,6 +1,7 @@
 function sortByName(){
  list = document.getElementsByClassName("productname"); // get all productnames
- productdiv = document.getElementsByClassName("productdiv"); // get field for sorting
+ // productdiv = document.getElementsByClassName("productdiv"); // get field for sorting
+ filterdiv = document.getElementsByClassName("filterdiv"); // get field for sorting
  switchcount = 0;
  switching = true;
  dir = "asc";
@@ -22,7 +23,7 @@ function sortByName(){
    }
  }
    if (shouldSwitch){
-     productdiv[i].parentNode.insertBefore(productdiv[i + 1], productdiv[i]);
+     filterdiv[i].parentNode.insertBefore(filterdiv[i + 1], filterdiv[i]);
      switching = true;
      switchcount ++;
    } else {
@@ -35,7 +36,8 @@ function sortByName(){
 }
 function sortByPrice(){
  list = document.getElementsByClassName("productprice"); // get all productprice
- productdiv = document.getElementsByClassName("productdiv"); // get field for sorting
+ // productdiv = document.getElementsByClassName("productdiv"); // get field for sorting
+ filterdiv = document.getElementsByClassName("filterdiv"); // get field for sorting
  switchcount = 0;
  switching = true;
  dir = "asc";
@@ -57,7 +59,7 @@ function sortByPrice(){
    }
  }
    if (shouldSwitch){
-     productdiv[i].parentNode.insertBefore(productdiv[i + 1], productdiv[i]);
+     filterdiv[i].parentNode.insertBefore(filterdiv[i + 1], filterdiv[i]);
      switching = true;
      switchcount ++;
    } else {

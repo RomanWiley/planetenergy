@@ -16,7 +16,6 @@ $(document).ready(function(){
 
 
 <?php
-
 $products=App\Product::all()
 ?>
 
