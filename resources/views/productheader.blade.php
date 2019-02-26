@@ -9,6 +9,7 @@
                 <label for="myInput">Zoekfilter: </label>
                 <input type="text" id="myInput" name="myInput" placeholder="Filter..">
 
+            <form action="webshopcategory" method="get" target="_self">
                 <label class="label" for="product_category">Categorie</label>
                 <select id="select_category" name="product_category" onchange="filteroncategory()">
                   <option value="Opwekken">Opwekken</option>
@@ -17,11 +18,13 @@
                   <option value="Besparen">Besparen</option>
                   <option value="Overig">Overig</option>
                 </select>
+                <input type="submit" value="Submit">
+            </form>
 <BR>
 <BR>
 
 </div>
-<script>
+{{-- <script>
    function filteroncategory(){
     var e = document.getElementById("select_category");
     var strCat = e.options[e.selectedIndex].text;
@@ -29,4 +32,4 @@
     window.open("../webshopcategory", "_self")
     // $products = DB::table('products')->where('productcategory', product_category)->get();
 }
-</script>
+</script> --}}

@@ -52,7 +52,6 @@ $products=App\Product::all()
                     @endforeach
 
                 </div>
-                {{-- {{$product->links()}} --}}
             </div>
         </div>
     </div>
