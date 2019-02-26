@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<h2> Dit is de categorie die gekozen is: </h2>
-<br>
 <?php
 $category = Illuminate\Support\Facades\Input::get('product_category');
-echo $category
 ?>
 
 <script>
