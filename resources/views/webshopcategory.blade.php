@@ -35,7 +35,7 @@ $products=App\Product::all()
                 <br>
                  <div id="filterme" class="panel-body">
                     @foreach($products as $product)
-                    @if ($product->product_category = $category)
+                    @if ($product->product_category == $category)
                     <?php
 
                     $link = $product->getFirstMediaUrl('product_images');
