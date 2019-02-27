@@ -31,7 +31,8 @@ Natuurlijk komt u dan als een van de eerste zaken de kosten tegen.....</p>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
 
-					<a href="/subsidies"><img class="card-img-top" src="img/houses.jpg" alt="Card image" title="klik om link te volgen"></a>
+                    <a href="/subsidies">
+                        <img class="card-img-top" src="img/houses.jpg" alt="Card image" title="klik om link te volgen"></a>
 			          <div class="card-body">
             <h4 class="card-title">Subsidies</h4>
             <p class="card-text">Hier vindt u een overzicht van subsidieregelingen die er worden aangeboden…..</p>

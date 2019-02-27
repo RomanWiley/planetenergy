@@ -57,6 +57,9 @@ Route::get('/forum', function () {
 Route::get('/webshop', function () {
     return view('webshop');
 });;
+Route::get('/linkoverview', function () {
+    return view('linkoverview');
+});;
 
 
 Route::resource('product', 'ProductController');

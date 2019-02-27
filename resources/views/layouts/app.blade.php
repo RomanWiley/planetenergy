@@ -50,6 +50,8 @@
                             </div>
                           </li>
                         <li class="nav-item"><a class="nav-link text-light" href='/contact'>Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href='/linkoverview'>Interessante links</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
