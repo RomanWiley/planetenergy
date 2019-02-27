@@ -60,7 +60,12 @@ Route::get('/webshop', function () {
 Route::get('/linkoverview', function () {
     return view('linkoverview');
 });;
-
+Route::get('/aanvraagsubsidie', function () {
+    return view('aanvraagsubsidie');
+});;
+Route::get('/aanvraagbevestiging', function () {
+    return view('aanvraagbevestiging');
+});;
 
 Route::resource('product', 'ProductController');
 Route::resource('product', 'ProductController')->except([
