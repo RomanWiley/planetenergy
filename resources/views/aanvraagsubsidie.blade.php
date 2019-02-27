@@ -8,7 +8,7 @@
 </div>
 
 <form action="aanvraagbevestiging" method="get" target="_blank">
-<label class="label" for="product_category">Categorie</label>
+<label class="label" for="product_category">Maak een keuze</label>
     <select id="select_category" name="product_category" onchange="filteroncategory()">
         <option value="Zon">Zon</option>
         <option value="Wind">Wind</option>
@@ -28,10 +28,9 @@
 <input type="text"id="asnaam" name="email" placeholder="Email...">
 <BR>
 <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Opmerkingen...">
-</textarea>
-
+</textarea> 
 <BR>
-<input type="submit" value="Submit">
+<button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
 
 </form>
 
