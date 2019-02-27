@@ -6,7 +6,11 @@
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4 pe-jumbotron">
       <h1 class="display-3">Duurzame energie voor iedereen!</h1>
-      <p class="lead">Planet Energy is een platform dat o.a. de mogelijkheid geeft aan mensen met een laag inkomen om te investeren in duurzame energie. Dit wordt gedaan dmv leningen en subsidies. Verder is Planet energy een informatie platform voor duurzame energie.</p>
+        <div style="font-size: 20px;max-width: 400px;color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+        Planet Energy is een platform dat o.a. de mogelijkheid geeft aan mensen met een laag inkomen om te investeren in duurzame energie.
+        Dit wordt gedaan dmv leningen en subsidies. Verder is Planet energy een informatie platform voor duurzame energie.
+        </div>
       <a href="" class="btn btn-primary btn-lg">Lees meer...</a>
     </header>
 
