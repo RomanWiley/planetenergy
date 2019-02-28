@@ -22,8 +22,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Product $product)
     {
+        $this->authorize('create', $product);
         return view('products.create');
     }
 

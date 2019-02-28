@@ -1,7 +1,9 @@
 <div id="productheaderdiv">
 <h1>Webshop</h1>
-
+@can('create', 'product')
 <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/create">Nieuw product</a></button>
+@endcan
+
 
 <button class="btn btn-outline-primary" onclick="sortByName()">Sorteer op productnaam</button>
 <button class="btn btn-outline-primary" onclick="sortByPrice()">Sorteer op prijs</button>

@@ -22,4 +22,9 @@ class ProductPolicy
         return $product->user_id == $user->id; //return true
 
     }
+
+    public function create(User $user, Product $product)
+    {
+        return $user->isCompany == 1;
+    }
 }
