@@ -5,9 +5,9 @@
   <div class="container">
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4 pe-jumbotron">
-      <h1 class="display-3">Duurzame energie voor iedereen!</h1>
-        <div style="font-size: 20px;max-width: 400px;color: white;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+      <h2 class="animated fadeInDown display-4" style="text-align: center">Duurzame energie voor iedereen!</h2>
+        <div style="font-size: 20px;max-width: 400px;color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        ">
         Planet Energy is een platform dat o.a. de mogelijkheid geeft aan mensen met een laag inkomen om te investeren in duurzame energie.
         Dit wordt gedaan dmv leningen en subsidies. Verder is Planet energy een informatie platform voor duurzame energie.
         </div>
