@@ -43,7 +43,7 @@ class ProductController extends Controller
             'user_id' => 'required',
             'product_image' => 'required']));
             if (isset($request['product_image'])) {
-                $product->addMediaFromRequest('product_image')->toMediaCollection('product_images');
+                $product->addMediaFromRequest('product_image')->withResponsiveImages()->toMediaCollection('product_images');
             }
             return redirect('/webshop');
     }
@@ -93,7 +93,7 @@ class ProductController extends Controller
             'product_image' => 'required'
         ]));
         if (isset($request['product_image'])) {
-            $product->addMediaFromRequest('product_image')->toMediaCollection('product_images');
+            $product->addMediaFromRequest('product_image')->withResponsiveImages()->toMediaCollection('product_images');
         }
         return redirect('/webshop');
     }

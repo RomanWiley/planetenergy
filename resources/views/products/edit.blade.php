@@ -34,22 +34,22 @@
 	<div class="field">
 		<label class="label" for="price">Prijs</label>
 		<div class="control">
-			<input type="text" class="input" name="price" value="{{ $product->price }}">
+			<input type="text" class="input form-control" name="price" value="{{ $product->price }}">
 		</div>
 	</div>
 
 	<div class="field">
-		<label class="label" for="product_image">Afbeelding</label>
-		<div class="control">
-			<input type="file" class="input" name="product_image" value="{{ $product->product_image }}">
-		</div>
+        <label class="btn btn-default btn-sm center-block btn-file">
+        <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+        <input name="product_image" type="file" style="display: none;">Afbeelding toevoegen
+        </label>
     </div>
 
     <input type="hidden" name="user_id" value="{{ auth()->id() }}">
 
     <div class="field">
 		<div class="control">
-			<button type="submit" class="button is-link">Edit this product</button>
+			<button type="submit" class="btn btn-info">Edit this product</button>
 		</div>
 	</div>
 

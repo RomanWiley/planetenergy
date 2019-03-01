@@ -11,4 +11,9 @@ class Product extends Model implements HasMedia
     protected $guarded = [];
 
     use HasMediaTrait;
+
+    public function registerMediaCollections()
+    {
+        $this->addMediaCollection('product_images')->singleFile();
+    }
 }
