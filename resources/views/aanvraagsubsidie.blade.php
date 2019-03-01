@@ -8,6 +8,7 @@
 </div>
 
 <form action="aanvraagbevestiging" method="get" target="_blank">
+@csrf
 <label class="label" for="product_category">Maak een keuze</label>
     <select id="select_category" name="product_category" onchange="filteroncategory()">
         <option value="Zon">Zon</option>
