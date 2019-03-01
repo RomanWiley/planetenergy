@@ -9,10 +9,8 @@
 $input = Request::all();
 ?>
 <div style="border-style: solid; border-radius: 25px; background-color: lightgray; padding: 25px;" >
-<b>Subsidie Categorie: </b>
-    {{$input['subsidie_category']}}
-<br>
-
+<h4><b>Subsidie Categorie: </b>
+    {{$input['subsidie_category']}}</h4>
 <b>Naam: </b>
     {{$input['naam']}}
 <br>
