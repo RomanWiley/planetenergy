@@ -12,7 +12,7 @@
 {{-- input for filter --}}
                 <label for="myInput">Zoekfilter: </label>
                 <input type="text" id="myInput" name="myInput" placeholder="Filter..">
-
+{{-- form for category filtering --}}
             <form action="webshopcategory" method="get" target="_self">
                 <label class="label" for="product_category">Categorie</label>
                 <select id="select_category" name="product_category" onchange="filteroncategory()">
@@ -24,16 +24,4 @@
                 </select>
                 <input type="submit" value="Submit">
             </form>
-<BR>
-<BR>
-
 </div>
-{{-- <script>
-   function filteroncategory(){
-    var e = document.getElementById("select_category");
-    var strCat = e.options[e.selectedIndex].text;
-    alert(strCat.concat(" is gekozen voor de nieuwe view"));
-    window.open("../webshopcategory", "_self")
-    // $products = DB::table('products')->where('productcategory', product_category)->get();
-}
-</script> --}}
