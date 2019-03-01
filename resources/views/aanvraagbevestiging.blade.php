@@ -10,7 +10,9 @@ $input = Request::all();
 $subsidie_category = $input['subsidie_category'];
 $naam = $input['naam'];
 $adres = $input['adres'];
-echo $naam . "<br>" . $adres . "<br>";
+$woonplaats = $input['woonplaats'];
+
+echo $naam . "<br>" . $adres . "<br>" . "<b>Woonplaats </b>" . $woonplaats . "<br>";
 ?>
 
 <BR>
