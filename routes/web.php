@@ -63,8 +63,8 @@ Route::get('/linkoverview', function () {
 Route::get('/aanvraagsubsidie', function () {
     return view('aanvraagsubsidie');
 });;
-Route::post('/aanvraagbevestiging', function (Request $request) {
-    return view('aanvraagbevestiging', compact('request'));
+Route::post('/aanvraagbevestiging', function () {
+    return view('aanvraagbevestiging');
 });;
 
 Route::resource('product', 'ProductController');
