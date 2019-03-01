@@ -36,20 +36,22 @@
             {!! Form::open(['route' => 'contact.store']) !!}
 
             <div class="form-group">
-                {!! Form::label('name', 'Your Name') !!}
+                {!! Form::label('name', 'Uw naam:') !!}
                 {!! Form::text('name', null, ['class' => 'form-control']) !!}
             </div>
 
             <div class="form-group">
-                {!! Form::label('email', 'E-mail Address') !!}
+                {!! Form::label('email', 'E-mail Adres:') !!}
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
 
             <div class="form-group">
+            {!! Form::label('email', 'Uw bericht hier:') !!}
+
                 {!! Form::textarea('msg', null, ['class' => 'form-control']) !!}
             </div>
 
-            {!! Form::submit('Submit', ['class' => 'btn btn-info']) !!}
+            {!! Form::submit('verstuur', ['class' => 'btn btn-info']) !!}
 
             {!! Form::close() !!}
         </div>
