@@ -4,7 +4,6 @@
 <br>
 
 <div class="container">
-    <h1>View met links</h1>
 <br>
             <div style="background-color:lightblue;border-radius:10px;width:50%;box-shadow: 10px 10px grey"
                 class="animated infinite bounce delay-40s">
