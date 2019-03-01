@@ -7,44 +7,36 @@
 </div>
 <?php
 $input = Request::all();
-$subsidie_category = $input['subsidie_category'];
-$naam = $input['naam'];
-$adres = $input['adres'];
-$woonplaats = $input['woonplaats'];
-$postcode = $input['postcode'];
-$telefoon = $input['telefoonnummer'];
-$email = $input['email'];
-$comment = $input['comment'];
 ?>
 <div style="border-style: solid; border-radius: 25px; background-color: lightgray; padding: 25px;" >
 <b>Subsidie Categorie: </b>
-{{$subsidie_category}}
+{{$input['subsidie_category']}}
 <BR>
 <b>Naam: </b>
-{{$naam}}
+{{$input['naam']}}
  <br>
- <b>Adres: </b> 
- {{$adres}} 
- <br> 
+ <b>Adres: </b>
+ {{$input['adres']}}
+ <br>
  <b>Woonplaats: </b>
- {{$woonplaats}}
+ {{$input['woonplaats']}}
  <br>
  <b>Postcode: </b>
- {{$postcode}}
+ {{$input['postcode']}}
  <BR>
  <b>Telefoon: </b>
- {{$telefoon}}
+ {{$input['telefoonnummer']}}
  <BR>
  <b>Email: </b>
- {{$email}}
+ {{$input['email']}}
  <BR>
  <b>Opmerkingen: </b>
- {{$comment}}
+ {{$input['comment']}}
 <BR>
 
 </div>
 <BR>
-<a href="/aanvraagsubsidie" class="btn btn-danger" >Terug</a>    
+<a href="/aanvraagsubsidie" class="btn btn-danger" >Terug</a>
 <button type="submit" class="btn btn-primary" id="sendMessageButton">Verzend</button>
 
 @endsection
