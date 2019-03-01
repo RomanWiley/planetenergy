@@ -31,6 +31,7 @@
 <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Opmerkingen...">
 </textarea> 
 <BR>
+<a href="/" class="btn btn-danger" >Annuleer</a>
 <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
 
 </form>

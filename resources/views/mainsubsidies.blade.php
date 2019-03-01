@@ -21,10 +21,7 @@
 			<li>Maximale bijdrage: Onbepaald</li>
 			<li>Status: Open voor indiening</li>
 			<li>Deadline voor aanvraag: 31-12-2019.<li>
-      <ul>
-      
-            <a href="#" class="btn btn-primary">Lees meer &rarr;</a>
-          
+      <ul>          
 
       <div class="col-md-">
 
@@ -36,7 +33,7 @@
               <div class="col-lg-">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#">linkje</a>
+                    <a href="/aanvraagsubsidie">Aanvraagformulier</a>
                   </li>
                   <li>
                     <a href="#">linkje</a>
