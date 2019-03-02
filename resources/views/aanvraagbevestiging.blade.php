@@ -42,7 +42,7 @@ $input = Request::all();
 </div>
 <br>
 <a href="/aanvraagsubsidie" class="btn btn-danger" >Terug</a>
-<a href="/" class="btn btn-succes" >Verzend</a>
+<a href="/" class="btn btn-success" >Verzend</a>
 
 
 @endsection
