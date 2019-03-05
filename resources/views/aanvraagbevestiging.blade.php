@@ -12,7 +12,7 @@ $input = Request::all();
 <h4><b>Subsidie Categorie: </b>
     {{$input['subsidie_category']}}</h4>
 <b>Naam: </b>
-    {{$input['naam']}}
+    {{$input['name']}}
 <br>
 
 <b>Adres: </b>
