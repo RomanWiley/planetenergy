@@ -2,9 +2,12 @@ function sortByName(){
  list = document.getElementsByClassName("productname"); // get all productnames
  // productdiv = document.getElementsByClassName("productdiv"); // get field for sorting
  filterdiv = document.getElementsByClassName("filterdiv"); // get field for sorting
+ btntext = document.getElementById("btnsortname"); // get button for display asc/desc
+  
  switchcount = 0;
  switching = true;
  dir = "asc";
+ btntext.value = "Aflopend sorteren op naam";
  while (switching){
    switching = false
    for (i = 0; i < (list.length - 1); i++) {
@@ -29,6 +32,7 @@ function sortByName(){
    } else {
      if (switchcount == 0 && dir == "asc"){
        dir = "desc";
+       btntext.value = "Oplopend sorteren op naam";
        switching = true;
    }
  }

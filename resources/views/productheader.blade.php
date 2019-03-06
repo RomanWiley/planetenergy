@@ -7,7 +7,8 @@
 @endif
 @endauth
 
-<button class="btn btn-outline-primary" onclick="sortByName()">Sorteer op productnaam</button>
+<input type="button" id="btnsortname" class="btn btn-outline-primary" onclick="sortByName()" value="Oplopend sorteren op naam"></button>
+
 <button class="btn btn-outline-primary" onclick="sortByPrice()">Sorteer op prijs</button>
 {{-- input for filter --}}
                 <label for="myInput">Zoekfilter: </label>
