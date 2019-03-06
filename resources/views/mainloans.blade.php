@@ -14,14 +14,11 @@
             <h2 class="card-title">Lening</h2>
             <p class="card-text">Wij bieden allereerst de mogelijkheid om mensen met een inkomen dat niet uitnodigt om te investeren in duurzame energie een start te geven middels een lening. <p>De lening heeft dus een sterk sociaal karakter voor particulieren.</p>
             </p>Bedrijven kunnen terecht voor twee zaken:</p>
-    
+
         <ul>
         <li>1. Ze kunnen optreden als investeerder in de leningenpot;
         <li>2. Of zelf een lening aanvragen.
         </ul>
-
-            <a href="#" class="btn btn-primary">Lees meer &rarr;</a>
-          
 
       <div class="col-md-">
 
