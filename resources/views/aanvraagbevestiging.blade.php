@@ -12,11 +12,11 @@ $input = Request::all();
 <h4><b>Subsidie Categorie: </b>
     {{$input['subsidie_category']}}</h4>
 
-    <b>Voornaam: </b>
-    {{$input['surname']}}
+<b>Voornaam: </b>
+    {{$input['firstname']}}
 <br>
 
-    <b>Achternaam: </b>
+<b>Achternaam: </b>
     {{$input['name']}}
 <br>
 
