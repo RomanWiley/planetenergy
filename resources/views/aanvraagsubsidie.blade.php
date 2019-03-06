@@ -21,7 +21,7 @@
             <div class="col">
 
                 <!-- Voornaam -->
-                <input type="text"id="asnaam" class="form-control" name="name" placeholder="Voornaam">
+                <input type="text"id="asnaam" class="form-control" name="surname" placeholder="Voornaam">
             </div>
             <div class="col">
                 <!-- Achternaam -->

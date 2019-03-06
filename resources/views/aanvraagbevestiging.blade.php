@@ -11,7 +11,12 @@ $input = Request::all();
 <div style="border-style: solid; border-radius: 25px; background-color: lightgray; padding: 25px;" >
 <h4><b>Subsidie Categorie: </b>
     {{$input['subsidie_category']}}</h4>
-<b>Naam: </b>
+
+    <b>Voornaam: </b>
+    {{$input['surname']}}
+<br>
+
+    <b>Achternaam: </b>
     {{$input['name']}}
 <br>
 
