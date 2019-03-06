@@ -79,7 +79,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-light" href="{{ route('logout') }}"
+                                    <a class="dropdown-item text-light" href="/logout"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
