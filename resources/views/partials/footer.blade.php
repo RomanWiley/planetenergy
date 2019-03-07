@@ -4,7 +4,12 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Planet Energy</p>
+                <span style="float:right;">Copyright &copy; Planet Energy</span>
+                <span>Follow us on: </span>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
             </div>
         </div>
     </footer>
