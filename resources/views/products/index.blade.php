@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-2">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 @include('productheader')
                 <div class="panel-heading"><h1>Mijn Producten</h1></div>

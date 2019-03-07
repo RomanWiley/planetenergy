@@ -4,6 +4,7 @@
 @auth
 @if (Auth::user()->isCompany == 1)
 <button class="btn btn-info"><a class="text-dark font-weight-bold" href="/product/create">Nieuw product</a></button>
+<button class="btn btn-success"><a class="text-dark font-weight-bold" href="/product">Mijn Producten</a></button>
 @endif
 @endauth
 
