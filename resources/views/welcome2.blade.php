@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+@include('flash::message')
   <!-- Page Content -->
   <div class="container">
     <!-- Jumbotron Header -->

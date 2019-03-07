@@ -28,7 +28,7 @@ class ContactController extends Controller {
     Mail::to('contactus.planetenergy@gmail.com')->send(new ContactEmail($contact));
     //
 
-    // flash('Your message has been sent!')->success();
+    flash('Uw bericht is verzonden!')->success();
 
     return redirect('/');
 
