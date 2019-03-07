@@ -3,8 +3,8 @@
 
 @auth
 @if (Auth::user()->isCompany == 1)
-<a class="text-dark font-weight-bold" href="/product/create"><button class="btn btn-info">Nieuw product</button></a>
-<a class="text-dark font-weight-bold" href="/product"><button class="btn btn-success">Mijn Producten</button></a>
+<a class="text-dark font-weight-bold" href="/product/create"><button class="btn btn-info text-dark"><b>Nieuw product</b></button></a>
+<a class="text-dark font-weight-bold" href="/product"><button class="btn btn-success text-dark"><b>Mijn Producten</b></button></a>
 @endif
 @endauth
 
