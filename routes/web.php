@@ -72,7 +72,7 @@ Route::get('/maininfo', function () {
 
 Route::resource('product', 'ProductController');
 Route::resource('product', 'ProductController')->except([
-    'index', 'show'
+    'show'
 ])->middleware('auth');
 
 

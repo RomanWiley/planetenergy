@@ -26,7 +26,7 @@ $products=App\Product::all()
                 @include('productheader')
                 <br>
                 <br>
-                 <div id="filterme" class="panel-body flex-container d-flex flex-wrap useflex">
+                <div id="filterme" class="panel-body flex-container d-flex flex-wrap useflex">
                     @foreach($products as $product)
                     <?php
 

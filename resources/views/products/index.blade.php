@@ -5,22 +5,33 @@
         <div class="col-md-10 col-md-offset-2">
             <div class="panel panel-default">
                 @include('productheader')
-                <div class="panel-heading"><h1>Webshop</h1></div>
+                <div class="panel-heading"><h1>Mijn Producten</h1></div>
                  <div class="panel-body">
-                    @foreach($products as $product)
+                    <div id="filterme" class="panel-body flex-container d-flex flex-wrap useflex">
+                        @foreach($products as $product)
+                            @if ($product->user_id == Auth()->id())
+                            <?php
 
-                        <article>
-                            <h4>{{ $product->product_name }}</h4>
-                            <div class='body'>
-                                {{ $product->price }}
-                            </div>
-                            <div class="footer">
-                                <a href='/product/{{$product->id}}'>Ga naar dit product.</a>
-                                <span class="float-right time-footer">Updated at {{$product->updated_at}}</span>
-                            </div>
-                        </article>
-                        <hr>
-                    @endforeach
+                            $link = $product->getFirstMediaUrl('product_images');
+                            $old = "localhost";
+                            $new = "pe.test";
+                            $newlink = str_replace($old, $new, $link);
+                            ?>
+                                <div class="filterdiv card col-md-3 m-2">
+                                <a href='/product/{{$product->id}}' style="text-decoration:none;color:black">
+                                    <article class="productdiv card-body">
+                                        <H4 class="productname card-title"><b>{{ $product->product_name }}</b></H4>
+                                        <img src="<?= $newlink?>" alt="No image found">
+                                        <div class='body card-text'>
+                                            Categorie: {{ $product->product_category }}<BR> &#8364
+                                            <span class="productprice"> {{ $product->price }} </span>
+                                    </div>
+                                </a>
+                                    </article>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
                 {{-- {{$product->links()}} --}}
             </div>
