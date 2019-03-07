@@ -11,7 +11,7 @@
         Planet Energy is een platform dat o.a. de mogelijkheid geeft aan mensen met een laag inkomen om te investeren in duurzame energie.
         Dit wordt gedaan dmv leningen en subsidies. Verder is Planet energy een informatie platform voor duurzame energie.
         </div>
-      <a href="" class="btn btn-primary btn-lg" style="margin-top: 25px">Lees meer...</a>
+      <a href="/maininfo" class="btn btn-primary btn-lg" style="margin-top: 25px">Lees meer...</a>
     </header>
 
     <!-- Page Features -->

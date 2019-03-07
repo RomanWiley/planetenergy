@@ -66,6 +66,9 @@ Route::get('/aanvraagsubsidie', function () {
 Route::post('/aanvraagbevestiging', function () {
     return view('aanvraagbevestiging');
 });;
+Route::get('/maininfo', function () {
+    return view('maininfo');
+});;
 
 Route::resource('product', 'ProductController');
 Route::resource('product', 'ProductController')->except([
