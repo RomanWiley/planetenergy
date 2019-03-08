@@ -21,6 +21,7 @@ class ContactController extends Controller {
     $contact = [];
 
     $contact['name'] = $request->get('name');
+    $valcontact = $request->validate(['email' => 'email']);
     $contact['email'] = $request->get('email');
     $contact['msg'] = $request->get('msg');
 
