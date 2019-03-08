@@ -10,10 +10,10 @@
 
 <input type="button" id="btnSortName" class="btn btn-outline-primary" onclick="sortByName()" value="Oplopend sorteren op naam"></button>
 <input type="button" id="btnSortPrice" class="btn btn-outline-primary" onclick="sortByPrice()" value="Oplopend sorteren op prijs"></button>
-
+<br>
 {{-- input for filter --}}
                 <label for="myInput"> Zoekfilter: </label>
-                <input style="width: 30%; border-color: lightblue; margin: 5px" type="text" id="myInput" name="myInput" placeholder="Filter..">
+                <input style="width: 40%; border-color: lightblue; margin: 5px" type="text" id="myInput" name="myInput" placeholder="Filter..">
 {{-- form for category filtering --}}
             <form action="webshopcategory" method="get" target="_self">
                 <label class="label" for="product_category">Categorie</label>
