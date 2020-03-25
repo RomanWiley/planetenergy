@@ -19,7 +19,7 @@
           </p>
           <p>
             <abbr title="Email">Email</abbr>:
-            <a href="mailto:contactus.planetenergy@gmail.com">Mail us!
+            <a href="mailto:contactplanetenergy@gmail.com">Mail us!
             </a>
           </p>
           <p>
